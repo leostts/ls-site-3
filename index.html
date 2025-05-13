@@ -8,113 +8,170 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      background: #f7f7f7;
+      color: #333;
+    }
+    header, footer {
+      background-color: #000;
       color: white;
       text-align: center;
+      padding: 2rem 1rem;
     }
-    header {
-      background-color: #111;
-      padding: 2rem;
+    nav {
+      background: #111;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 1rem;
     }
-    h1 {
-      font-size: 2.5rem;
-      margin: 0;
-    }
-    h2 {
-      font-size: 2rem;
-      margin-top: 2rem;
-    }
-    p {
-      font-size: 1.1rem;
-      max-width: 800px;
-      margin: 1rem auto;
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
     }
     section {
-      padding: 3rem 1rem;
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
     }
-    .cta {
-      background: #e91e63;
-      padding: 2rem;
-      border-radius: 10px;
-      max-width: 500px;
-      margin: 2rem auto;
+    h2 {
+      color: #c62828;
+      margin-bottom: 1rem;
     }
-    .feedback {
-      background-color: #1c1c1c;
+    .case, .post {
+      background: #fff;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-left: 4px solid #c62828;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    form {
+      background: #fff;
       padding: 2rem;
-      margin: 2rem auto;
-      max-width: 600px;
       border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
     input, textarea, button {
-      display: block;
       width: 100%;
-      margin: 1rem 0;
+      margin: 0.5rem 0;
       padding: 0.8rem;
-      border: none;
-      border-radius: 5px;
       font-size: 1rem;
-    }
-    input, textarea {
-      background-color: #333;
-      color: white;
+      border: 1px solid #ccc;
+      border-radius: 5px;
     }
     button {
-      background-color: #e91e63;
+      background: #c62828;
       color: white;
+      border: none;
       cursor: pointer;
-      transition: background 0.3s;
     }
-    button:hover {
-      background-color: #c2185b;
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 55px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 26px;
+      z-index: 1000;
     }
-    footer {
-      background-color: #000;
-      padding: 1rem;
-      font-size: 0.9rem;
+    footer a {
+      color: #fff;
+      margin: 0 10px;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>LS Performance Estratégica</h1>
-    <p>Consultoria especializada em alavancar resultados com foco em estratégia, eficiência e crescimento sustentável.</p>
+    <p>Consultoria especializada em resultados com estratégia e performance.</p>
   </header>
 
-  <section>
-    <h2>Quem Somos</h2>
-    <p>Somos uma consultoria liderada por Leonardo Santos, voltada para a transformação estratégica de empresas por meio de soluções personalizadas e práticas de alta performance.</p>
-    <p>Atuamos em diversas áreas como planejamento estratégico, análise de performance, otimização de processos e desenvolvimento de equipes. Nosso diferencial está no compromisso com resultados reais e mensuráveis, sempre respeitando a identidade e os objetivos de cada cliente.</p>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#diferenciais">Diferenciais</a>
+    <a href="#cases">Cases</a>
+    <a href="#blog">Blog</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>Sobre Leonardo Santos</h2>
+    <p>Leonardo é especialista em estratégia e gestão de performance, com anos de experiência ajudando empresas a se destacarem no mercado. Criou a LS Performance Estratégica com o propósito de transformar negócios com soluções reais e personalizadas.</p>
   </section>
 
-  <section>
-    <h2>Nossos Serviços</h2>
-    <p>• Diagnóstico empresarial completo<br>
-       • Planejamento estratégico personalizado<br>
-       • Acompanhamento de metas e indicadores<br>
-       • Mentoria para líderes e gestores<br>
-       • Palestras e treinamentos corporativos</p>
+  <section id="servicos">
+    <h2>Serviços</h2>
+    <ul>
+      <li>Diagnóstico e planejamento estratégico</li>
+      <li>Mentoria de alta performance para líderes</li>
+      <li>Implementação de cultura de resultados</li>
+      <li>Palestras e workshops</li>
+    </ul>
   </section>
 
-  <section class="cta">
-    <h2>Quer elevar os resultados da sua empresa?</h2>
-    <p>Entre em contato conosco e descubra como podemos acelerar o seu crescimento com inteligência e estratégia.</p>
-    <p><strong>Email:</strong> contato@lsperformance.com</p>
+  <section id="diferenciais">
+    <h2>Diferenciais da LS Performance</h2>
+    <ul>
+      <li>Atendimento personalizado</li>
+      <li>Foco total em resultados mensuráveis</li>
+      <li>Metodologia própria adaptada ao seu negócio</li>
+      <li>Atuação estratégica e prática</li>
+    </ul>
   </section>
 
-  <section class="feedback">
-    <h2>Deixe seu feedback</h2>
-    <p>Nos diga como podemos melhorar ou compartilhe sua experiência com a LS Performance Estratégica:</p>
+  <section id="cases">
+    <h2>Cases de Sucesso</h2>
+    <div class="case">
+      <strong>Empresa X:</strong> aumento de 45% na performance da equipe após 3 meses de mentoria.
+    </div>
+    <div class="case">
+      <strong>Negócio Y:</strong> crescimento de 60% no faturamento após reestruturação estratégica conduzida pela LS.
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2>Blog Estratégico</h2>
+    <div class="post">
+      <strong>📌 Como a liderança impacta diretamente nos resultados da sua equipe</strong>
+      <p>Descubra como líderes estratégicos podem alavancar a produtividade e o engajamento dos colaboradores com ações simples e eficazes.</p>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato e Feedback</h2>
+    <p>Tem dúvidas, sugestões ou quer agendar uma conversa? Preencha o formulário abaixo!</p>
     <form action="https://formspree.io/f/mayvjpqk" method="POST">
       <input type="text" name="nome" placeholder="Seu nome" required />
       <input type="email" name="email" placeholder="Seu e-mail" required />
-      <textarea name="mensagem" rows="5" placeholder="Seu feedback" required></textarea>
-      <button type="submit">Enviar Feedback</button>
+      <textarea name="mensagem" rows="5" placeholder="Sua mensagem ou feedback" required></textarea>
+      <button type="submit">Enviar</button>
     </form>
   </section>
 
+  <a class="whatsapp-float" href="https://w.app/lsperformance" target="_blank" title="Fale no WhatsApp">💬</a>
+
   <footer>
-    <p>&copy; 2025 LS Performance Estratégica. Todos os direitos reservados.</p>
+    <p>© 2025 LS Performance Estratégica</p>
+    <p><a href="https://www.instagram.com/lsperfomarce" target="_blank">Instagram</a> | <a href="https://w.app/lsperformance" target="_blank">WhatsApp</a></p>
   </footer>
+
+  <!-- Google Analytics pronto para ativar -->
+  <!--
+  <script async src="https://www.googletagmanager.com/gtag/js?id=SUA-ID-GA"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'SUA-ID-GA');
+  </script>
+  -->
 </body>
 </html>
